@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Bloom Bliss</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Your Shopping Cart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+    </nav>
+  </header>
+
+  <section id="cartItems" class="cart-container"></section>
+
+  <div class="total-section">
+    <h2>Total: ₹<span id="totalPrice">0</span></h2>
+    <button onclick="clearCart()">Clear Cart</button>
+  </div>
+<div class="total-section">
+  <h2>Total: ₹<span id="cartTotal">0</span></h2>
+  <button onclick="checkout()">Checkout</button>
+  <button class="shop-now" onclick="window.location.href='products.html'">Shop Now</button>
+</div>
+<section class="delivery-form">
+  <h2>Delivery Details</h2>
+  <form id="deliveryForm">
+    <input type="text" id="customerName" placeholder="Full Name" required><br>
+    <input type="tel" id="phoneNumber" placeholder="Phone Number" required><br>
+    <textarea id="deliveryAddress" placeholder="Full Address" required></textarea><br>
+    <button type="submit">Confirm & Checkout</button>
+  </form>
+</section>
+
+  <script src="cart.js"></script>
+</body>
+</html>

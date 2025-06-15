@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Reviews - Bloom Bliss</title>
+  <link rel="stylesheet" href="review.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>What Our Customers Say</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="reviews">
+    <div class="review-card">
+      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      <p>"Absolutely stunning flowers! My wife loved them. Delivery was on time too."</p>
+      <h4>– Arjun M.</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="star-rating">⭐⭐⭐⭐</div>
+      <p>"Great packaging and vibrant blooms. Ordered for my mom’s birthday and she was thrilled!"</p>
+      <h4>– Sneha R.</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      <p>"Best flower shop online! Quick delivery and amazing customer service."</p>
+      <h4>– Karthik S.</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="star-rating">⭐⭐⭐⭐</div>
+      <p>"The bouquet was more beautiful than the picture. Highly recommend Bloom Bliss!"</p>
+      <h4>– Priya D.</h4>
+    </div>
+  </section>
+  <section class="review-form">
+  <h2>Leave a Review</h2>
+  <form id="reviewForm">
+    <textarea id="reviewText" placeholder="Write your review..." required></textarea><br>
+    <label for="starRating">Your Rating:</label>
+    <select id="starRating" required>
+      <option value="">Select</option>
+      <option value="1">⭐⭐⭐⭐⭐</option>
+      <option value="2">⭐⭐⭐⭐</option>
+      <option value="3">⭐⭐⭐</option>
+      <option value="4">⭐⭐</option>
+      <option value="5">⭐</option>
+    </select><br><br>
+    <input type="text" id="reviewerName" placeholder="Your Name" required><br><br>
+    <button type="submit">Add Review</button>
+  </form>
+</section>
+<script src="review.js"></script>
+</body>
+</html>

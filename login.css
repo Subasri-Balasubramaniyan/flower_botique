@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #ffc1e3, #ffe4ec);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   height: 90vh;
+  background-image: url('./login.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;        /* Make it cover entire viewport */
+  background-position: center;   /* Center the image */
+  background-attachment: fixed; 
+}
+
+
+.login-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  animation: popFade 0.8s ease-in-out;
+}
+
+.login-container h2 {
+  color: #ff4081;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff4081;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e73370;
+}
+
+.extra-link {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.extra-link a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+.extra-link a:hover {
+  text-decoration: underline;
+}
+
+@keyframes popFade {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
